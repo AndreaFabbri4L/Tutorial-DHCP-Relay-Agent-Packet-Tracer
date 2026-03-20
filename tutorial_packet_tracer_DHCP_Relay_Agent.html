@@ -31,7 +31,6 @@
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
-
   html { scroll-behavior: smooth; }
 
   body {
@@ -182,10 +181,7 @@
   }
 
   /* ── Sidebar ── */
-  .sidebar {
-    position: sticky;
-    top: 80px;
-  }
+  .sidebar { position: sticky; top: 80px; }
   .toc {
     background: var(--surface);
     border: 1px solid var(--border);
@@ -203,10 +199,7 @@
     text-transform: uppercase;
     color: var(--text-muted);
   }
-  .toc ul {
-    list-style: none;
-    padding: 0.5rem 0;
-  }
+  .toc ul { list-style: none; padding: 0.5rem 0; }
   .toc li a {
     display: block;
     padding: 0.4rem 1rem;
@@ -235,9 +228,7 @@
   .content { min-width: 0; }
 
   /* ── Section ── */
-  .section {
-    margin-bottom: 3.5rem;
-  }
+  .section { margin-bottom: 3.5rem; }
   .section-header {
     display: flex;
     align-items: flex-start;
@@ -286,26 +277,10 @@
     font-size: 0.9rem;
     line-height: 1.65;
   }
-  .box.info {
-    background: var(--accent-light);
-    border-color: var(--accent);
-    color: #1a3a80;
-  }
-  .box.warning {
-    background: var(--amber-light);
-    border-color: #e09000;
-    color: var(--amber);
-  }
-  .box.success {
-    background: var(--green-light);
-    border-color: var(--green);
-    color: #145c37;
-  }
-  .box.note {
-    background: var(--accent2-light);
-    border-color: var(--accent2);
-    color: #8b1a14;
-  }
+  .box.info { background: var(--accent-light); border-color: var(--accent); color: #1a3a80; }
+  .box.warning { background: var(--amber-light); border-color: #e09000; color: var(--amber); }
+  .box.success { background: var(--green-light); border-color: var(--green); color: #145c37; }
+  .box.note { background: var(--accent2-light); border-color: var(--accent2); color: #8b1a14; }
   .box-title {
     font-family: var(--display);
     font-weight: 700;
@@ -335,52 +310,6 @@
     display: inline-block;
   }
 
-  /* ── Image Placeholder ── */
-  .img-placeholder {
-    width: 100%;
-    border: 2px dashed var(--border);
-    border-radius: 8px;
-    background: var(--surface);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 0.6rem;
-    padding: 2.5rem 2rem;
-    margin: 1.5rem 0;
-    color: var(--text-light);
-    min-height: 200px;
-  }
-  .img-placeholder .img-icon {
-    font-size: 2.5rem;
-    opacity: 0.4;
-  }
-  .img-placeholder .img-label {
-    font-family: var(--display);
-    font-weight: 700;
-    font-size: 0.85rem;
-    color: var(--text-muted);
-    letter-spacing: 0.04em;
-  }
-  .img-placeholder .img-desc {
-    font-family: var(--mono);
-    font-size: 0.72rem;
-    color: var(--text-light);
-    text-align: center;
-    max-width: 400px;
-    line-height: 1.5;
-  }
-  .img-placeholder .img-num {
-    font-family: var(--mono);
-    font-size: 0.65rem;
-    background: var(--surface-alt);
-    border: 1px solid var(--border);
-    border-radius: 30px;
-    padding: 0.2em 0.8em;
-    color: var(--text-light);
-    letter-spacing: 0.06em;
-  }
-
   /* ── Table ── */
   table {
     width: 100%;
@@ -391,10 +320,7 @@
     overflow: hidden;
     box-shadow: 0 0 0 1px var(--border);
   }
-  thead tr {
-    background: var(--accent);
-    color: #fff;
-  }
+  thead tr { background: var(--accent); color: #fff; }
   thead th {
     padding: 0.7rem 1rem;
     text-align: left;
@@ -467,10 +393,7 @@
     margin: 1.5rem 0;
     overflow-x: auto;
   }
-  .topo-svg-container {
-    display: flex;
-    justify-content: center;
-  }
+  .topo-svg-container { display: flex; justify-content: center; }
   svg.topo { font-family: var(--mono); }
 
   /* ── Config block ── */
@@ -495,14 +418,8 @@
     letter-spacing: 0.08em;
     text-transform: uppercase;
   }
-  .config-dots {
-    display: flex;
-    gap: 5px;
-  }
-  .config-dots span {
-    width: 10px; height: 10px;
-    border-radius: 50%;
-  }
+  .config-dots { display: flex; gap: 5px; }
+  .config-dots span { width: 10px; height: 10px; border-radius: 50%; }
   .config-dots span:nth-child(1) { background: #ff5f57; }
   .config-dots span:nth-child(2) { background: #febc2e; }
   .config-dots span:nth-child(3) { background: #28c840; }
@@ -523,11 +440,7 @@
   .cmd-ip      { color: #ffcb6b; font-weight: 500; }
 
   /* ── Checklist ── */
-  .checklist {
-    list-style: none;
-    padding: 0;
-    margin: 1rem 0;
-  }
+  .checklist { list-style: none; padding: 0; margin: 1rem 0; }
   .checklist li {
     display: flex;
     align-items: flex-start;
@@ -558,7 +471,6 @@
   }
   footer strong { color: rgba(255,255,255,0.8); }
 
-  /* ── Responsive ── */
   @media (max-width: 800px) {
     .layout { grid-template-columns: 1fr; }
     .sidebar { position: static; }
@@ -598,7 +510,6 @@
 
 <div class="layout">
 
-  <!-- SIDEBAR -->
   <aside class="sidebar">
     <div class="toc">
       <div class="toc-header">Indice del Tutorial</div>
@@ -619,10 +530,8 @@
     </div>
   </aside>
 
-  <!-- CONTENT -->
   <main class="content">
 
-    <!-- ══ OBIETTIVI ══ -->
     <section class="section" id="obiettivi">
       <div class="section-header">
         <span class="step-badge">00</span>
@@ -653,7 +562,6 @@
       </div>
     </section>
 
-    <!-- ══ TOPOLOGIA ══ -->
     <section class="section" id="topologia">
       <div class="section-header">
         <span class="step-badge">01</span>
@@ -662,90 +570,56 @@
 
       <p>La rete da realizzare è composta da due subnet separate e connesse da un unico router. Il server DHCP si trova sulla Rete 1 e serve dinamicamente i client di entrambe le reti grazie al relay configurato sull'interfaccia del router verso la Rete 2.</p>
 
-      <!-- SVG TOPOLOGY DIAGRAM -->
       <div class="topology">
         <div class="topo-svg-container">
-          <svg class="topo" width="740" height="340" viewBox="0 0 740 340" xmlns="http://www.w3.org/2000/svg">
+          <svg class="topo" width="740" height="340" viewBox="0 0 740 340">
             <defs>
-              <marker id="arr" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
-                <path d="M1,1 L7,4 L1,7 Z" fill="#888"/>
+              <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="#c0392b"/>
               </marker>
             </defs>
-
-            <!-- RETE 1 BG -->
             <rect x="10" y="20" width="290" height="300" rx="10" fill="#e8eef8" stroke="#1a4fa0" stroke-width="1.5" stroke-dasharray="6,4"/>
             <text x="24" y="42" font-family="'IBM Plex Mono'" font-size="11" font-weight="500" fill="#1a4fa0" letter-spacing="0.08em">RETE 1 — 192.168.10.0/24</text>
-
-            <!-- RETE 2 BG -->
             <rect x="440" y="20" width="290" height="300" rx="10" fill="#fef3e2" stroke="#e09000" stroke-width="1.5" stroke-dasharray="6,4"/>
             <text x="454" y="42" font-family="'IBM Plex Mono'" font-size="11" font-weight="500" fill="#9a6200" letter-spacing="0.08em">RETE 2 — 192.168.20.0/24</text>
-
-            <!-- ROUTER (center) -->
             <rect x="316" y="130" width="108" height="56" rx="8" fill="#1a4fa0" stroke="#0e3080" stroke-width="2"/>
             <text x="370" y="153" text-anchor="middle" font-family="'Syne'" font-size="12" font-weight="700" fill="white">Router</text>
             <text x="370" y="169" text-anchor="middle" font-family="'IBM Plex Mono'" font-size="9.5" fill="rgba(255,255,255,0.8)">Cisco 2911</text>
-            <!-- Router ports -->
             <rect x="305" y="148" width="12" height="18" rx="2" fill="#82aaff"/>
             <rect x="423" y="148" width="12" height="18" rx="2" fill="#ffcb6b"/>
             <text x="303" y="182" text-anchor="middle" font-family="'IBM Plex Mono'" font-size="8.5" fill="#1a4fa0">G0/0</text>
             <text x="437" y="182" text-anchor="middle" font-family="'IBM Plex Mono'" font-size="8.5" fill="#9a6200">G0/1</text>
-
-            <!-- SWITCH 1 -->
             <rect x="105" y="185" width="100" height="40" rx="6" fill="#1a4fa0" stroke="#0e3080" stroke-width="1.5"/>
             <text x="155" y="201" text-anchor="middle" font-family="'Syne'" font-size="11" font-weight="700" fill="white">Switch 1</text>
-            <text x="155" y="216" text-anchor="middle" font-family="'IBM Plex Mono'" font-size="8.5" fill="rgba(255,255,255,0.75)">2960</text>
-
-            <!-- SWITCH 2 -->
-            <rect x="535" y="185" width="100" height="40" rx="6" fill="#e09000" stroke="#b87000" stroke-width="1.5"/>
+            <text x="155" y="215" text-anchor="middle" font-family="'IBM Plex Mono'" font-size="8.5" fill="rgba(255,255,255,0.8)">Cisco 2960</text>
+            <rect x="535" y="185" width="100" height="40" rx="6" fill="#e09000" stroke="#9a6200" stroke-width="1.5"/>
             <text x="585" y="201" text-anchor="middle" font-family="'Syne'" font-size="11" font-weight="700" fill="white">Switch 2</text>
-            <text x="585" y="216" text-anchor="middle" font-family="'IBM Plex Mono'" font-size="8.5" fill="rgba(255,255,255,0.8)">2960</text>
-
-            <!-- PC1 -->
-            <rect x="40" y="270" width="72" height="36" rx="5" fill="white" stroke="#1a4fa0" stroke-width="1.5"/>
-            <text x="76" y="285" text-anchor="middle" font-family="'Syne'" font-size="10" font-weight="700" fill="#1a4fa0">PC-1</text>
-            <text x="76" y="298" text-anchor="middle" font-family="'IBM Plex Mono'" font-size="7.5" fill="#6b6560">DHCP</text>
-
-            <!-- PC2 -->
-            <rect x="128" y="270" width="72" height="36" rx="5" fill="white" stroke="#1a4fa0" stroke-width="1.5"/>
-            <text x="164" y="285" text-anchor="middle" font-family="'Syne'" font-size="10" font-weight="700" fill="#1a4fa0">PC-2</text>
-            <text x="164" y="298" text-anchor="middle" font-family="'IBM Plex Mono'" font-size="7.5" fill="#6b6560">DHCP</text>
-
-            <!-- SERVER DHCP -->
-            <rect x="40" y="70" width="92" height="46" rx="6" fill="white" stroke="#1a7a4a" stroke-width="2"/>
-            <text x="86" y="89" text-anchor="middle" font-family="'Syne'" font-size="10" font-weight="700" fill="#1a7a4a">DHCP Server</text>
-            <text x="86" y="105" text-anchor="middle" font-family="'IBM Plex Mono'" font-size="8" fill="#6b6560">192.168.10.2</text>
-
-            <!-- PC3 -->
-            <rect x="510" y="270" width="72" height="36" rx="5" fill="white" stroke="#e09000" stroke-width="1.5"/>
-            <text x="546" y="285" text-anchor="middle" font-family="'Syne'" font-size="10" font-weight="700" fill="#9a6200">PC-3</text>
-            <text x="546" y="298" text-anchor="middle" font-family="'IBM Plex Mono'" font-size="7.5" fill="#6b6560">DHCP</text>
-
-            <!-- PC4 -->
-            <rect x="598" y="270" width="72" height="36" rx="5" fill="white" stroke="#e09000" stroke-width="1.5"/>
-            <text x="634" y="285" text-anchor="middle" font-family="'Syne'" font-size="10" font-weight="700" fill="#9a6200">PC-4</text>
-            <text x="634" y="298" text-anchor="middle" font-family="'IBM Plex Mono'" font-size="7.5" fill="#6b6560">DHCP</text>
-
-            <!-- Cables -->
-            <!-- Server → Switch1 -->
-            <line x1="86" y1="116" x2="140" y2="185" stroke="#1a7a4a" stroke-width="2" stroke-dasharray="5,3"/>
-            <!-- PC1 → Switch1 -->
-            <line x1="76" y1="270" x2="140" y2="225" stroke="#1a4fa0" stroke-width="2"/>
-            <!-- PC2 → Switch1 -->
-            <line x1="164" y1="270" x2="164" y2="225" stroke="#1a4fa0" stroke-width="2"/>
-            <!-- Switch1 → Router -->
-            <line x1="205" y1="205" x2="305" y2="162" stroke="#444" stroke-width="2.5"/>
-            <!-- Router → Switch2 -->
+            <text x="585" y="215" text-anchor="middle" font-family="'IBM Plex Mono'" font-size="8.5" fill="rgba(255,255,255,0.8)">Cisco 2960</text>
+            <rect x="55" y="75" width="60" height="60" rx="6" fill="white" stroke="#1a4fa0" stroke-width="2"/>
+            <text x="85" y="105" text-anchor="middle" font-size="24">🖥️</text>
+            <text x="85" y="125" text-anchor="middle" font-family="'IBM Plex Mono'" font-size="9" fill="#1a4fa0" font-weight="600">DHCP Server</text>
+            <text x="85" y="145" text-anchor="middle" font-family="'IBM Plex Mono'" font-size="8" fill="#666">192.168.10.2</text>
+            <rect x="35" y="270" width="50" height="35" rx="4" fill="white" stroke="#1a4fa0" stroke-width="2"/>
+            <text x="60" y="293" text-anchor="middle" font-size="18">💻</text>
+            <text x="60" y="320" text-anchor="middle" font-family="'IBM Plex Mono'" font-size="9" fill="#1a4fa0" font-weight="600">PC-1</text>
+            <rect x="125" y="270" width="50" height="35" rx="4" fill="white" stroke="#1a4fa0" stroke-width="2"/>
+            <text x="150" y="293" text-anchor="middle" font-size="18">💻</text>
+            <text x="150" y="320" text-anchor="middle" font-family="'IBM Plex Mono'" font-size="9" fill="#1a4fa0" font-weight="600">PC-2</text>
+            <rect x="520" y="270" width="50" height="35" rx="4" fill="white" stroke="#e09000" stroke-width="2"/>
+            <text x="545" y="293" text-anchor="middle" font-size="18">💻</text>
+            <text x="545" y="320" text-anchor="middle" font-family="'IBM Plex Mono'" font-size="9" fill="#e09000" font-weight="600">PC-3</text>
+            <rect x="610" y="270" width="50" height="35" rx="4" fill="white" stroke="#e09000" stroke-width="2"/>
+            <text x="635" y="293" text-anchor="middle" font-size="18">💻</text>
+            <text x="635" y="320" text-anchor="middle" font-family="'IBM Plex Mono'" font-size="9" fill="#e09000" font-weight="600">PC-4</text>
+            <line x1="305" y1="162" x2="205" y2="205" stroke="#444" stroke-width="2.5"/>
+            <line x1="85" y1="135" x2="155" y2="185" stroke="#1a4fa0" stroke-width="2"/>
+            <line x1="60" y1="270" x2="135" y2="225" stroke="#1a4fa0" stroke-width="2"/>
+            <line x1="150" y1="270" x2="155" y2="225" stroke="#1a4fa0" stroke-width="2"/>
             <line x1="435" y1="162" x2="535" y2="205" stroke="#444" stroke-width="2.5"/>
-            <!-- PC3 → Switch2 -->
             <line x1="546" y1="270" x2="570" y2="225" stroke="#e09000" stroke-width="2"/>
-            <!-- PC4 → Switch2 -->
             <line x1="634" y1="270" x2="610" y2="225" stroke="#e09000" stroke-width="2"/>
-
-            <!-- IP labels on router ports -->
             <text x="265" y="148" font-family="'IBM Plex Mono'" font-size="8" fill="#1a4fa0">192.168.10.1</text>
             <text x="438" y="148" font-family="'IBM Plex Mono'" font-size="8" fill="#9a6200">192.168.20.1</text>
-
-            <!-- DHCP Relay arrow -->
             <path d="M435 158 Q 520 80 535 185" stroke="#c0392b" stroke-width="1.5" stroke-dasharray="4,3" fill="none" marker-end="url(#arr)"/>
             <text x="500" y="108" font-family="'IBM Plex Mono'" font-size="8.5" fill="#c0392b" text-anchor="middle">ip helper-address</text>
             <text x="500" y="119" font-family="'IBM Plex Mono'" font-size="8.5" fill="#c0392b" text-anchor="middle">192.168.10.2</text>
@@ -777,54 +651,33 @@
             <td>GigabitEthernet0/0</td>
             <td><code>192.168.10.1</code></td>
             <td><code>255.255.255.0</code></td>
-            <td>—</td>
+            <td>N/A</td>
           </tr>
           <tr>
             <td>Router 2911</td>
             <td>GigabitEthernet0/1</td>
             <td><code>192.168.20.1</code></td>
             <td><code>255.255.255.0</code></td>
-            <td>—</td>
+            <td>N/A</td>
           </tr>
           <tr>
-            <td>PC-1, PC-2</td>
-            <td>FastEthernet0</td>
-            <td><em>Dinamico DHCP</em></td>
+            <td>PC Rete 1</td>
+            <td>NIC</td>
+            <td>Assegnato via DHCP</td>
             <td><code>255.255.255.0</code></td>
             <td><code>192.168.10.1</code></td>
           </tr>
           <tr>
-            <td>PC-3, PC-4</td>
-            <td>FastEthernet0</td>
-            <td><em>Dinamico DHCP</em></td>
+            <td>PC Rete 2</td>
+            <td>NIC</td>
+            <td>Assegnato via DHCP</td>
             <td><code>255.255.255.0</code></td>
             <td><code>192.168.20.1</code></td>
           </tr>
         </tbody>
       </table>
-
-      <h3>Scope DHCP</h3>
-      <table>
-        <thead>
-          <tr><th>Parametro</th><th>Valore</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Pool Name</td><td><code>POOL_LAN</code></td></tr>
-          <tr><td>Start Address</td><td><code>192.168.10.16</code></td></tr>
-          <tr><td>Max. Indirizzi</td><td><code>16</code> (fino a <code>192.168.10.31</code>)</td></tr>
-          <tr><td>Subnet Mask</td><td><code>255.255.255.0</code></td></tr>
-          <tr><td>Default Gateway Rete 1</td><td><code>192.168.10.1</code></td></tr>
-          <tr><td>Default Gateway Rete 2</td><td><code>192.168.20.1</code></td></tr>
-        </tbody>
-      </table>
-
-      <div class="box warning">
-        <div class="box-title">⚠️ Attenzione agli IP esclusi</div>
-        Gli indirizzi <code>192.168.10.1</code> (gateway router) e <code>192.168.10.2</code> (server DHCP) si trovano fuori dallo scope (<code>.16</code> – <code>.31</code>), quindi non vengono assegnati dinamicamente. Non è necessario configurare esclusioni manuali.
-      </div>
     </section>
 
-    <!-- ══ STEP 02 ══ -->
     <section class="section" id="step02">
       <div class="section-header">
         <span class="step-badge">02</span>
@@ -832,20 +685,16 @@
       </div>
 
       <ol class="steps">
-        <li>Avvia <strong>Cisco Packet Tracer</strong>. Nella schermata iniziale clicca su <strong>File → New</strong> (o premi <code>Ctrl+N</code>) per creare un nuovo progetto vuoto.</li>
-        <li>Vai su <strong>File → Save As</strong> e salva il file con un nome significativo, ad esempio <code>rete_dhcp_relay.pkt</code>, in una cartella dedicata al tuo lavoro.</li>
-        <li>Verifica che la modalità attiva sia <strong>Realtime Mode</strong> (in basso a destra, l'icona con l'orologio verde). Non usare la Simulation Mode in questa fase.</li>
+        <li>Apri <strong>Cisco Packet Tracer</strong>.</li>
+        <li>Dal menu <strong>File</strong> seleziona <strong>Save As...</strong></li>
+        <li>Salva il file con il nome: <code>DHCP_Relay_[TuoCognome].pkt</code> (es: <em>DHCP_Relay_Rossi.pkt</em>).</li>
       </ol>
-
-      <div class="img-placeholder">
-        <div class="img-icon">🖼️</div>
-        <div class="img-label">Schermata 01</div>
-        <div class="img-desc">Finestra iniziale di Packet Tracer con il nuovo progetto vuoto aperto e la barra degli strumenti in evidenza</div>
-        <div class="img-num">SCREENSHOT_01 · Inserire qui l'immagine</div>
+      <div class="box note">
+        <div class="box-title">💾 Ricorda di salvare spesso</div>
+        Durante l'esercitazione premi periodicamente <code>Ctrl+S</code> (o <code>Cmd+S</code> su Mac) per non perdere i progressi in caso di crash del simulatore.
       </div>
     </section>
 
-    <!-- ══ STEP 03 ══ -->
     <section class="section" id="step03">
       <div class="section-header">
         <span class="step-badge">03</span>
@@ -875,60 +724,44 @@
         <li>Rinomina i dispositivi facendo <strong>doppio clic</strong> sull'etichetta: usa i nomi <em>Router0</em>, <em>Switch1</em>, <em>Switch2</em>, <em>PC-1</em>, <em>PC-2</em>, <em>PC-3</em>, <em>PC-4</em>, <em>DHCP-Server</em>.</li>
       </ol>
 
-      <div class="img-placeholder">
-        <div class="img-icon">🖼️</div>
-        <div class="img-label">Schermata 02</div>
-        <div class="img-desc">Workspace con tutti i dispositivi aggiunti e rinominati, prima del cablaggio</div>
-        <div class="img-num">SCREENSHOT_02 · Inserire qui l'immagine</div>
-      </div>
+      <figure style="text-align: center; margin: 1.5rem 0;">
+          <img src="1.PNG" alt="Schermata 02" style="max-width: 100%; height: auto; border: 1px solid #d8d4cc; border-radius: 8px;">
+          <figcaption style="margin-top: 8px; font-style: italic; color: #666; font-size: 0.85rem;">
+              Schermata 02 - Workspace con tutti i dispositivi aggiunti e rinominati, prima del cablaggio
+          </figcaption>
+      </figure>
+
     </section>
 
-    <!-- ══ STEP 04 ══ -->
     <section class="section" id="step04">
       <div class="section-header">
         <span class="step-badge">04</span>
         <h2>Cablaggio della rete</h2>
       </div>
 
-      <p>Per collegare i dispositivi usa il tipo di cavo corretto. In Packet Tracer seleziona il cavo dalla barra in basso (icona del fulmine/cavo), poi clicca sul primo dispositivo scegliendo la porta e poi sul secondo.</p>
-
-      <div class="box info">
-        <div class="box-title">🔵 Cavo da usare</div>
-        Usa sempre il <strong>Copper Straight-Through</strong> (cavo dritto, colore nero) per collegare dispositivi di tipo diverso (PC→Switch, Switch→Router, Server→Switch). Packet Tracer 8.x gestisce automaticamente anche i crossover, ma è buona abitudine usare il tipo corretto.
-      </div>
-
-      <h3>Connessioni da effettuare</h3>
-      <table>
-        <thead>
-          <tr><th>Da</th><th>Porta</th><th>A</th><th>Porta</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>DHCP-Server</td><td>FastEthernet0</td><td>Switch 1</td><td>FastEthernet0/1</td></tr>
-          <tr><td>PC-1</td><td>FastEthernet0</td><td>Switch 1</td><td>FastEthernet0/2</td></tr>
-          <tr><td>PC-2</td><td>FastEthernet0</td><td>Switch 1</td><td>FastEthernet0/3</td></tr>
-          <tr><td>Switch 1</td><td>GigabitEthernet0/1</td><td>Router0</td><td>GigabitEthernet0/0</td></tr>
-          <tr><td>Router0</td><td>GigabitEthernet0/1</td><td>Switch 2</td><td>GigabitEthernet0/1</td></tr>
-          <tr><td>PC-3</td><td>FastEthernet0</td><td>Switch 2</td><td>FastEthernet0/1</td></tr>
-          <tr><td>PC-4</td><td>FastEthernet0</td><td>Switch 2</td><td>FastEthernet0/2</td></tr>
-        </tbody>
-      </table>
+      <p>I collegamenti tra dispositivi differenti (es. PC-Switch o Switch-Router) avvengono con un cavo dritto in rame (<strong>Copper Straight-Through</strong>), contrassegnato dall'icona della linea nera continua.</p>
 
       <ol class="steps">
-        <li>Clicca sull'icona del cavo (fulmine) nella barra inferiore e seleziona <strong>Copper Straight-Through</strong>.</li>
-        <li>Clicca sul <strong>DHCP-Server</strong>, scegli la porta <code>FastEthernet0</code>, poi clicca su <strong>Switch 1</strong> e seleziona <code>FastEthernet0/1</code>.</li>
-        <li>Ripeti per tutti i collegamenti elencati nella tabella sopra.</li>
-        <li>Verifica che i pallini sulle porte diventino <strong>verdi</strong>. Se rimangono arancioni, attendi qualche secondo; se rimangono rossi controlla il tipo di cavo o la porta selezionata.</li>
+        <li>Clicca sull'icona delle <strong>Connections</strong> (il fulmine arancione).</li>
+        <li>Seleziona il <strong>Copper Straight-Through</strong> (linea nera continua).</li>
+        <li>Collega <strong>PC-1</strong> e <strong>PC-2</strong> allo <strong>Switch 1</strong> (scegliendo le porte <em>FastEthernet</em>).</li>
+        <li>Collega il <strong>DHCP-Server</strong> allo <strong>Switch 1</strong>.</li>
+        <li>Collega <strong>PC-3</strong> e <strong>PC-4</strong> allo <strong>Switch 2</strong>.</li>
+        <li>Collega lo <strong>Switch 1</strong> alla porta <strong>GigabitEthernet0/0</strong> del <strong>Router</strong>.</li>
+        <li>Collega lo <strong>Switch 2</strong> alla porta <strong>GigabitEthernet0/1</strong> del <strong>Router</strong>.</li>
+        <li>Attendi che i led sulle porte dello switch diventino verdi (puoi accelerare il tempo premendo <code>Alt+W</code> o il tasto <em>Fast Forward Time</em> in basso). <strong>Nota:</strong> I led lato router rimarranno rossi finché le porte non verranno accese tramite configurazione CLI.
+        Se rimangono arancioni, attendi qualche secondo; se rimangono rossi controlla il tipo di cavo o la porta selezionata.</li>
       </ol>
 
-      <div class="img-placeholder">
-        <div class="img-icon">🖼️</div>
-        <div class="img-label">Schermata 03</div>
-        <div class="img-desc">Workspace con tutti i cavi connessi e i led verde sulle porte attive</div>
-        <div class="img-num">SCREENSHOT_03 · Inserire qui l'immagine</div>
-      </div>
+      <figure style="text-align: center; margin: 1.5rem 0;">
+          <img src="2.PNG" alt="Schermata 03" style="max-width: 100%; height: auto; border: 1px solid #d8d4cc; border-radius: 8px;">
+          <figcaption style="margin-top: 8px; font-style: italic; color: #666; font-size: 0.85rem;">
+              Schermata 03 - Workspace con tutti i cavi connessi e i led verde sulle porte attive
+          </figcaption>
+      </figure>
+
     </section>
 
-    <!-- ══ STEP 05 ══ -->
     <section class="section" id="step05">
       <div class="section-header">
         <span class="step-badge">05</span>
@@ -964,33 +797,32 @@
         </tbody>
       </table>
 
-      <div class="img-placeholder">
-        <div class="img-icon">🖼️</div>
-        <div class="img-label">Schermata 04</div>
-        <div class="img-desc">Scheda "IP Configuration" del DHCP-Server con i campi IP Address, Subnet Mask e Default Gateway compilati</div>
-        <div class="img-num">SCREENSHOT_04 · Inserire qui l'immagine</div>
-      </div>
+      <figure style="text-align: center; margin: 1.5rem 0;">
+          <img src="3.PNG" alt="Schermata 04" style="max-width: 100%; height: auto; border: 1px solid #d8d4cc; border-radius: 8px;">
+          <figcaption style="margin-top: 8px; font-style: italic; color: #666; font-size: 0.85rem;">
+              Schermata 04 - Scheda "IP Configuration" del DHCP-Server con i campi compilati
+          </figcaption>
+      </figure>
 
       <h3>5.2 – Configurazione del servizio DHCP</h3>
       <ol class="steps">
-        <li>Nella stessa finestra del server, clicca sulla scheda <strong>Services</strong> → <strong>DHCP</strong>.</li>
-        <li>Assicurati che il servizio sia <strong>On</strong> (pulsante verde in alto).</li>
-        <li>Compila il primo pool di indirizzi con i seguenti valori e clicca su <strong>Add</strong> (o <strong>Save</strong>):</li>
+        <li>Sempre nella finestra del server, vai nella scheda <strong>Services</strong>.</li>
+        <li>Nel menu a sinistra, seleziona <strong>DHCP</strong>.</li>
+        <li>Assicurati che il servizio sia su <strong>On</strong>.</li>
+        <li>Crea il primo pool (per la Rete 1): modifica il pool di default (spesso chiamato <em>serverPool</em>) o creane uno nuovo chiamato <code>POOL_RETE1</code>. Inserisci i dati e clicca <strong>Save</strong> o <strong>Add</strong>.</li>
+        <li>Crea il secondo pool (per la Rete 2) chiamato <code>POOL_RETE2</code>, compila i dati e clicca su <strong>Add</strong>.</li>
       </ol>
 
+      <h4>Dati per POOL_RETE1</h4>
       <table>
-        <thead>
-          <tr><th>Campo</th><th>Valore da inserire</th></tr>
-        </thead>
         <tbody>
-          <tr><td>Pool Name</td><td><code>POOL_RETE1</code></td></tr>
+          <tr>
+            <td>Pool Name</td>
+            <td><span class="ip-placeholder">[ POOL_RETE1 ]</span></td>
+          </tr>
           <tr>
             <td>Default Gateway</td>
             <td><span class="ip-placeholder">[ 192.168.10.1 ]</span></td>
-          </tr>
-          <tr>
-            <td>DNS Server</td>
-            <td><span class="ip-placeholder">[ lasciare vuoto o 0.0.0.0 ]</span></td>
           </tr>
           <tr>
             <td>Start IP Address</td>
@@ -1007,17 +839,13 @@
         </tbody>
       </table>
 
-      <ol class="steps" style="counter-reset: stepcount 3">
-        <li>Clicca <strong>Add</strong> per salvare il pool <code>POOL_RETE1</code>.</li>
-        <li>Aggiungi un secondo pool per la Rete 2: clicca ancora su <strong>Add</strong> (o ripeti il procedimento). Compila il secondo pool:</li>
-      </ol>
-
+      <h4>Dati per POOL_RETE2</h4>
       <table>
-        <thead>
-          <tr><th>Campo</th><th>Valore da inserire</th></tr>
-        </thead>
         <tbody>
-          <tr><td>Pool Name</td><td><code>POOL_RETE2</code></td></tr>
+          <tr>
+            <td>Pool Name</td>
+            <td><span class="ip-placeholder">[ POOL_RETE2 ]</span></td>
+          </tr>
           <tr>
             <td>Default Gateway</td>
             <td><span class="ip-placeholder">[ 192.168.20.1 ]</span></td>
@@ -1042,15 +870,15 @@
         Il server DHCP identifica la subnet del client richiedente tramite l'IP sorgente della richiesta (o tramite il <em>relay agent IP</em>). Avendo due subnet distinte, occorrono due pool separati con i rispettivi gateway predefiniti. Il pool corretto viene selezionato automaticamente in base all'indirizzo di provenienza della richiesta.
       </div>
 
-      <div class="img-placeholder">
-        <div class="img-icon">🖼️</div>
-        <div class="img-label">Schermata 05</div>
-        <div class="img-desc">Scheda Services → DHCP del server con i due pool configurati (POOL_RETE1 e POOL_RETE2) e il servizio attivo (On)</div>
-        <div class="img-num">SCREENSHOT_05 · Inserire qui l'immagine</div>
-      </div>
+      <figure style="text-align: center; margin: 1.5rem 0;">
+          <img src="4.PNG" alt="Schermata 05" style="max-width: 100%; height: auto; border: 1px solid #d8d4cc; border-radius: 8px;">
+          <figcaption style="margin-top: 8px; font-style: italic; color: #666; font-size: 0.85rem;">
+              Schermata 05 - Scheda Services → DHCP del server con i due pool configurati
+          </figcaption>
+      </figure>
+
     </section>
 
-    <!-- ══ STEP 06 ══ -->
     <section class="section" id="step06">
       <div class="section-header">
         <span class="step-badge">06</span>
@@ -1072,32 +900,30 @@
       </ol>
 
       <h3>6.2 – Configurazione interfaccia GigabitEthernet0/0 (Rete 1)</h3>
-
       <div class="config-block">
         <div class="config-header">
           <span class="config-title">Router0 — Configurazione G0/0 (Rete 1)</span>
           <div class="config-dots"><span></span><span></span><span></span></div>
         </div>
-        <pre><span class="cmd-comment">! Accede alla modalità privilegiata</span>
-<span class="cmd-prompt">Router&gt;</span> <span class="cmd-key">enable</span>
+        <pre><span class="cmd-prompt">Router&gt;</span> <span class="cmd-key">enable</span>
 <span class="cmd-prompt">Router#</span> <span class="cmd-key">configure terminal</span>
 <span class="cmd-prompt">Router(config)#</span> <span class="cmd-key">interface</span> GigabitEthernet0/0
 <span class="cmd-prompt">Router(config-if)#</span> <span class="cmd-key">description</span> <span class="cmd-val">Connessione a Rete 1 - 192.168.10.0/24</span>
 <span class="cmd-prompt">Router(config-if)#</span> <span class="cmd-key">ip address</span> <span class="cmd-ip">[ INSERIRE: 192.168.10.1 ]</span> <span class="cmd-ip">[ INSERIRE: 255.255.255.0 ]</span>
 <span class="cmd-prompt">Router(config-if)#</span> <span class="cmd-key">no shutdown</span>
 <span class="cmd-comment">! Deve comparire: %LINK-5-CHANGED: Interface GigabitEthernet0/0, changed state to up</span>
-<span class="cmd-prompt">Router(config-if)#</span> <span class="cmd-key">exit</span></pre>
+<span class="cmd-prompt">Router(config-if)#</span> <span class="cmd-key">exit</span>
+<span class="cmd-prompt">Router(config)#</span></pre>
       </div>
 
-      <div class="img-placeholder">
-        <div class="img-icon">🖼️</div>
-        <div class="img-label">Schermata 06</div>
-        <div class="img-desc">CLI del router dopo la configurazione dell'interfaccia G0/0: si vede il messaggio "changed state to up" e il prompt che torna a Router(config)#</div>
-        <div class="img-num">SCREENSHOT_06 · Inserire qui l'immagine</div>
-      </div>
+      <figure style="text-align: center; margin: 1.5rem 0;">
+          <img src="5.PNG" alt="Schermata 06" style="max-width: 100%; height: auto; border: 1px solid #d8d4cc; border-radius: 8px;">
+          <figcaption style="margin-top: 8px; font-style: italic; color: #666; font-size: 0.85rem;">
+              Schermata 06 - CLI del router con i comandi di configurazione di G0/0
+          </figcaption>
+      </figure>
 
       <h3>6.3 – Configurazione interfaccia GigabitEthernet0/1 (Rete 2)</h3>
-
       <div class="config-block">
         <div class="config-header">
           <span class="config-title">Router0 — Configurazione G0/1 (Rete 2)</span>
@@ -1112,7 +938,6 @@
       </div>
 
       <h3>6.4 – Salvataggio della configurazione</h3>
-
       <div class="config-block">
         <div class="config-header">
           <span class="config-title">Salvataggio configurazione router</span>
@@ -1124,113 +949,108 @@
 <span class="cmd-comment">! Deve comparire: Building configuration... [OK]</span></pre>
       </div>
 
-      <div class="img-placeholder">
-        <div class="img-icon">🖼️</div>
-        <div class="img-label">Schermata 07</div>
-        <div class="img-desc">CLI dopo la configurazione di entrambe le interfacce e il salvataggio: si vede il messaggio "Building configuration... [OK]"</div>
-        <div class="img-num">SCREENSHOT_07 · Inserire qui l'immagine</div>
-      </div>
+      <figure style="text-align: center; margin: 1.5rem 0;">
+          <img src="6.PNG" alt="Schermata 07" style="max-width: 100%; height: auto; border: 1px solid #d8d4cc; border-radius: 8px;">
+          <figcaption style="margin-top: 8px; font-style: italic; color: #666; font-size: 0.85rem;">
+              Schermata 07 - Output del salvataggio configurazione
+          </figcaption>
+      </figure>
+
     </section>
 
-    <!-- ══ STEP 07 ══ -->
     <section class="section" id="step07">
       <div class="section-header">
         <span class="step-badge">07</span>
-        <h2>Abilitazione del DHCP Relay (<code>ip helper-address</code>)</h2>
+        <h2>Configurazione DHCP Relay (ip helper-address)</h2>
       </div>
 
-      <p>Normalmente un router <strong>blocca i pacchetti broadcast</strong>, tra cui le richieste DHCP Discover inviate dai client (destinazione <code>255.255.255.255</code>). Il comando <code>ip helper-address</code> dice al router di intercettare quei broadcast sull'interfaccia specificata e di <strong>inoltrarli come unicast</strong> verso l'indirizzo del server DHCP.</p>
-
-      <div class="box note">
-        <div class="box-title">📌 Dove si mette ip helper-address?</div>
-        Il comando va inserito sull'interfaccia del router che è <strong>nella stessa rete dei client che non hanno ancora un IP</strong>. Nel nostro caso, i PC-3 e PC-4 sono nella Rete 2, quindi il relay va configurato sull'interfaccia <strong>GigabitEthernet0/1</strong>.
-      </div>
+      <p>I messaggi DHCP viaggiano in broadcast (IP di destinazione <code>255.255.255.255</code>). I router, per regola generale, <strong>bloccano i messaggi di broadcast</strong> per evitare tempeste di rete. Di conseguenza, i client della Rete 2 non potranno mai raggiungere il server DHCP nella Rete 1 in modo autonomo.</p>
+      
+      <p>Per risolvere questo problema, dobbiamo istruire l'interfaccia G0/1 (quella della Rete 2) ad agire da <strong>Relay Agent</strong>, ovvero a catturare i broadcast DHCP, trasformarli in pacchetti <em>unicast</em> (diretti al server specifico) e inoltrarli.</p>
 
       <div class="config-block">
         <div class="config-header">
-          <span class="config-title">Router0 — DHCP Relay su G0/1</span>
+          <span class="config-title">Configurazione IP Helper su G0/1</span>
           <div class="config-dots"><span></span><span></span><span></span></div>
         </div>
         <pre><span class="cmd-prompt">Router#</span> <span class="cmd-key">configure terminal</span>
 <span class="cmd-prompt">Router(config)#</span> <span class="cmd-key">interface</span> GigabitEthernet0/1
-<span class="cmd-prompt">Router(config-if)#</span> <span class="cmd-key">ip helper-address</span> <span class="cmd-ip">[ INSERIRE: 192.168.10.2 ]</span>
-<span class="cmd-comment">! L'indirizzo è quello del DHCP Server nella Rete 1</span>
+<span class="cmd-prompt">Router(config-if)#</span> <span class="cmd-key">ip helper-address</span> <span class="cmd-ip">[ INSERIRE IP DHCP SERVER: 192.168.10.2 ]</span>
 <span class="cmd-prompt">Router(config-if)#</span> <span class="cmd-key">end</span>
 <span class="cmd-prompt">Router#</span> <span class="cmd-key">write memory</span></pre>
       </div>
 
-      <div class="box success">
-        <div class="box-title">✅ Come funziona il relay</div>
-        Quando un client sulla Rete 2 invia un <strong>DHCP Discover</strong> (broadcast), il router lo riceve su G0/1. Grazie al relay, il router crea un nuovo pacchetto <strong>unicast</strong> con: sorgente = IP dell'interfaccia G0/1 (<code>192.168.20.1</code>), destinazione = IP del server DHCP (<code>192.168.10.2</code>). Il server risponde al router, che poi smista la risposta al client corretto. Il server capisce a quale pool appartiene la richiesta grazie al campo <em>relay agent IP address</em> nel pacchetto.
+      <div class="box info">
+        <div class="box-title">🔄 Il flusso logico del DHCP Relay</div>
+        Quando PC-3 (Rete 2) invia un DHCP Discover in broadcast, il router lo riceve sull'interfaccia G0/1. Grazie a <code>ip helper-address</code>, il router crea un nuovo pacchetto unicast: IP sorgente = G0/1 (<code>192.168.20.1</code>), destinazione = IP del server DHCP (<code>192.168.10.2</code>). Il server risponde al router, che poi smista la risposta al client corretto. Il server capisce a quale pool appartiene la richiesta grazie al campo <em>relay agent IP address</em> nel pacchetto.
       </div>
 
-      <div class="img-placeholder">
-        <div class="img-icon">🖼️</div>
-        <div class="img-label">Schermata 08</div>
-        <div class="img-desc">CLI del router con il comando ip helper-address configurato sull'interfaccia G0/1</div>
-        <div class="img-num">SCREENSHOT_08 · Inserire qui l'immagine</div>
-      </div>
+      <figure style="text-align: center; margin: 1.5rem 0;">
+          <img src="7.PNG" alt="Schermata 08" style="max-width: 100%; height: auto; border: 1px solid #d8d4cc; border-radius: 8px;">
+          <figcaption style="margin-top: 8px; font-style: italic; color: #666; font-size: 0.85rem;">
+              Schermata 08 - CLI del router con il comando ip helper-address configurato sull'interfaccia G0/1
+          </figcaption>
+      </figure>
 
       <h3>Verifica rapida della configurazione router</h3>
-
       <div class="config-block">
         <div class="config-header">
           <span class="config-title">Verifica interfacce e relay</span>
           <div class="config-dots"><span></span><span></span><span></span></div>
         </div>
         <pre><span class="cmd-prompt">Router#</span> <span class="cmd-key">show ip interface brief</span>
-<span class="cmd-comment">! Output atteso:
-! GigabitEthernet0/0  192.168.10.1   YES manual up   up
-! GigabitEthernet0/1  192.168.20.1   YES manual up   up</span>
-
+<span class="cmd-comment">! Output atteso:</span>
+<span class="cmd-comment">! GigabitEthernet0/0      192.168.10.1    YES manual up                    up</span>
+<span class="cmd-comment">! GigabitEthernet0/1      192.168.20.1    YES manual up                    up</span></pre>
       </div>
 
-      <div class="img-placeholder">
-        <div class="img-icon">🖼️</div>
-        <div class="img-label">Schermata 09</div>
-        <div class="img-desc">Output del comando "show ip interface brief" con le due interfacce in stato "up/up" e gli IP corretti</div>
-        <div class="img-num">SCREENSHOT_09 · Inserire qui l'immagine</div>
-      </div>
+      <figure style="text-align: center; margin: 1.5rem 0;">
+          <img src="8.PNG" alt="Schermata 09" style="max-width: 100%; height: auto; border: 1px solid #d8d4cc; border-radius: 8px;">
+          <figcaption style="margin-top: 8px; font-style: italic; color: #666; font-size: 0.85rem;">
+              Schermata 09 - Output del comando "show ip interface brief" con le due interfacce in stato "up/up" e gli IP corretti
+          </figcaption>
+      </figure>
+
     </section>
 
-    <!-- ══ STEP 08 ══ -->
     <section class="section" id="step08">
       <div class="section-header">
         <span class="step-badge">08</span>
         <h2>Configurazione PC della Rete 1 (PC-1 e PC-2)</h2>
       </div>
 
-      <p>I PC della Rete 1 devono essere impostati su DHCP per ricevere automaticamente l'indirizzo IP dal server.</p>
+      <p>I PC della Rete 1 si trovano nello stesso segmento (dominio di broadcast) del server DHCP, quindi otterranno l'IP direttamente, senza bisogno del router.</p>
 
       <ol class="steps">
-        <li>Fai <strong>doppio clic</strong> su <em>PC-1</em> per aprirne le proprietà.</li>
-        <li>Vai nella scheda <strong>Desktop</strong> → <strong>IP Configuration</strong>.</li>
-        <li>Seleziona l'opzione <strong>DHCP</strong> (il radio button in alto).</li>
-        <li>Attendi qualche secondo: Packet Tracer simulerà il processo DORA. Vedrai comparire un IP nel range <code>192.168.10.16</code>–<code>192.168.10.31</code>, la subnet mask <code>255.255.255.0</code> e il gateway <code>192.168.10.1</code>.</li>
-        <li>Ripeti gli stessi passi per <em>PC-2</em>.</li>
+        <li>Fai <strong>doppio clic</strong> su <em>PC-1</em>.</li>
+        <li>Vai in <strong>Desktop</strong> → <strong>IP Configuration</strong>.</li>
+        <li>Cambia la selezione da <em>Static</em> a <strong>DHCP</strong>.</li>
+        <li>Attendi qualche secondo. Deve comparire la scritta <strong>DHCP request successful</strong> e verranno assegnati:
+          <ul>
+            <li>IP Address: <code>192.168.10.16</code> (o successivo)</li>
+            <li>Subnet Mask: <code>255.255.255.0</code></li>
+            <li>Default Gateway: <code>192.168.10.1</code></li>
+          </ul>
+        </li>
+        <li>Ripeti l'operazione identica per <em>PC-2</em>.</li>
       </ol>
 
-      <div class="box info">
-        <div class="box-title">🔵 Velocizzare la simulazione</div>
-        Se l'IP non compare subito, clicca sul pulsante <strong>Fast Forward Time</strong> (doppia freccia avanti ▶▶) nella barra in basso. Questo accelera il tempo simulato e forza il completamento del handshake DHCP.
-      </div>
+      <figure style="text-align: center; margin: 1.5rem 0;">
+          <img src="9.PNG" alt="Schermata 10" style="max-width: 100%; height: auto; border: 1px solid #d8d4cc; border-radius: 8px;">
+          <figcaption style="margin-top: 8px; font-style: italic; color: #666; font-size: 0.85rem;">
+              Schermata 10 - PC-1 e PC-2: finestra "IP Configuration" con DHCP selezionato e indirizzo IP assegnato
+          </figcaption>
+      </figure>
 
-      <div class="img-placeholder">
-        <div class="img-icon">🖼️</div>
-        <div class="img-label">Schermata 10</div>
-        <div class="img-desc">PC-1: finestra "IP Configuration" con DHCP selezionato e indirizzo IP assegnato dinamicamente (es. 192.168.10.16)</div>
-        <div class="img-num">SCREENSHOT_10 · Inserire qui l'immagine</div>
-      </div>
     </section>
 
-    <!-- ══ STEP 09 ══ -->
     <section class="section" id="step09">
       <div class="section-header">
         <span class="step-badge">09</span>
         <h2>Configurazione PC della Rete 2 (PC-3 e PC-4)</h2>
       </div>
 
-      <p>La configurazione è identica a quella dei PC della Rete 1. La differenza è che questi PC riceveranno un indirizzo dalla subnet <code>192.168.20.0/24</code> grazie al relay configurato sul router.</p>
+      <p>I PC della Rete 2 dipendono interamente dal Relay Agent configurato sul router.</p>
 
       <ol class="steps">
         <li>Fai <strong>doppio clic</strong> su <em>PC-3</em>.</li>
@@ -1244,58 +1064,55 @@
         PC-3 invia un broadcast <strong>DHCP Discover</strong>. Lo Switch 2 lo inonda su tutte le porte. Il router lo riceve su G0/1 e, grazie a <code>ip helper-address</code>, lo incapsula in un pacchetto unicast verso <code>192.168.10.2</code>. Il server DHCP riceve la richiesta, guarda il campo <em>giaddr</em> (<code>192.168.20.1</code>), seleziona il <code>POOL_RETE2</code> e risponde con un indirizzo della Rete 2. Il router riceve la risposta e la inoltra a PC-3.
       </div>
 
-      <div class="img-placeholder">
-        <div class="img-icon">🖼️</div>
-        <div class="img-label">Schermata 11</div>
-        <div class="img-desc">PC-3: finestra "IP Configuration" con DHCP selezionato e indirizzo IP assegnato nella subnet 192.168.20.0/24 (es. 192.168.20.16)</div>
-        <div class="img-num">SCREENSHOT_11 · Inserire qui l'immagine</div>
-      </div>
+      <figure style="text-align: center; margin: 1.5rem 0;">
+          <img src="10.PNG" alt="Schermata 11" style="max-width: 100%; height: auto; border: 1px solid #d8d4cc; border-radius: 8px;">
+          <figcaption style="margin-top: 8px; font-style: italic; color: #666; font-size: 0.85rem;">
+              Schermata 11 - PC-3: finestra "IP Configuration" con DHCP selezionato e indirizzo IP assegnato nella subnet 192.168.20.0/24 (es. 192.168.20.16)
+          </figcaption>
+      </figure>
+
     </section>
 
-    <!-- ══ STEP 10 TEST ══ -->
     <section class="section" id="test">
       <div class="section-header">
         <span class="step-badge">10</span>
-        <h2>Test e verifica della rete</h2>
+        <h2>Test di connettività e verifica</h2>
       </div>
 
-      <p>Questa fase è cruciale: non basta configurare, occorre <strong>verificare</strong> che tutto funzioni correttamente. Esegui tutti i test seguenti.</p>
+      <p>Affinché la rete possa dirsi completamente funzionante, dobbiamo accertarci non solo che l'IP venga assegnato, ma che i PC delle due reti riescano a parlarsi (grazie al routing del Cisco 2911).</p>
 
-      <h3>Test A – Verifica assegnazione IP con ipconfig</h3>
+      <h3>Test A – Verifica con ipconfig</h3>
       <ol class="steps">
-        <li>Apri il <em>PC-1</em> → <strong>Desktop</strong> → <strong>Command Prompt</strong>.</li>
-        <li>Digita <code>ipconfig</code> e premi Invio.</li>
-        <li>Verifica che compaia: IP <code>192.168.10.16</code> (o successivo), Mask <code>255.255.255.0</code>, Gateway <code>192.168.10.1</code>.</li>
-        <li>Ripeti per PC-2, PC-3 e PC-4. I PC sulla Rete 2 devono avere IP nella subnet <code>192.168.20.x</code>.</li>
+        <li>Apri <em>PC-1</em>, vai in <strong>Desktop</strong> e apri il <strong>Command Prompt</strong>.</li>
+        <li>Digita <code>ipconfig</code> e verifica che l'indirizzo IPv4 e il gateway siano corretti per la Rete 1.</li>
       </ol>
 
-      <div class="img-placeholder">
-        <div class="img-icon">🖼️</div>
-        <div class="img-label">Schermata 12</div>
-        <div class="img-desc">Command Prompt di PC-3 con output di ipconfig: IP 192.168.20.x, subnet mask 255.255.255.0, gateway 192.168.20.1</div>
-        <div class="img-num">SCREENSHOT_12 · Inserire qui l'immagine</div>
-      </div>
+      <figure style="text-align: center; margin: 1.5rem 0;">
+          <img src="11.PNG" alt="Schermata 12" style="max-width: 100%; height: auto; border: 1px solid #d8d4cc; border-radius: 8px;">
+          <figcaption style="margin-top: 8px; font-style: italic; color: #666; font-size: 0.85rem;">
+              Schermata 12 - Output del comando ipconfig dal Command Prompt di un PC
+          </figcaption>
+      </figure>
 
-      <h3>Test B – Ping al gateway</h3>
+      <h3>Test B – Ping intra-rete (stessa subnet)</h3>
       <ol class="steps">
-        <li>Dal Command Prompt di <em>PC-1</em>, digita: <code>ping 192.168.10.1</code></li>
-        <li>Devono arrivare 4 risposte con <code>Reply from 192.168.10.1</code>.</li>
-        <li>Dal Command Prompt di <em>PC-3</em>, digita: <code>ping 192.168.20.1</code></li>
-        <li>Stesso risultato atteso.</li>
+        <li>Sempre dal Command Prompt di <em>PC-1</em>, digita: <code>ping [IP_DI_PC_2]</code> (es: <code>ping 192.168.10.17</code>).</li>
+        <li>Verifica la risposta: 4 reply ricevuti, 0% di packet loss.</li>
       </ol>
 
-      <h3>Test C – Ping cross-subnet (PC-1 → PC-3)</h3>
+      <h3>Test C – Ping inter-rete (tra subnet diverse)</h3>
       <ol class="steps">
-        <li>Dal Command Prompt di <em>PC-1</em>, digita: <code>ping 192.168.20.16</code> (o l'IP effettivo di PC-3).</li>
-        <li>Devono arrivare 4 risposte: questo conferma che il router instrada correttamente il traffico tra le due subnet.</li>
+        <li>Sempre da <em>PC-1</em>, digita: <code>ping [IP_DI_PC_3]</code> (es: <code>ping 192.168.20.16</code>).</li>
+        <li><em>Attenzione:</em> Il primo o i primi due pacchetti potrebbero andare in timeout (<code>Request timed out</code>) mentre i dispositivi risolvono gli indirizzi MAC tramite ARP. I successivi avranno successo.</li>
+        <li>Ripeti il comando: questa volta avrai 4 risposte su 4.</li>
       </ol>
 
-      <div class="img-placeholder">
-        <div class="img-icon">🖼️</div>
-        <div class="img-label">Schermata 13</div>
-        <div class="img-desc">Command Prompt di PC-1 con il ping verso l'IP di PC-3 (subnet diversa): 4 reply con successo dimostrano il corretto routing inter-subnet</div>
-        <div class="img-num">SCREENSHOT_13 · Inserire qui l'immagine</div>
-      </div>
+      <figure style="text-align: center; margin: 1.5rem 0;">
+          <img src="12.PNG" alt="Schermata 13" style="max-width: 100%; height: auto; border: 1px solid #d8d4cc; border-radius: 8px;">
+          <figcaption style="margin-top: 8px; font-style: italic; color: #666; font-size: 0.85rem;">
+              Schermata 13 - Ping da PC-1 a PC-3 (subnet diversa): 4 reply con successo dimostrano il corretto routing inter-subnet
+          </figcaption>
+      </figure>
 
       <h3>Test D – Ping al DHCP Server</h3>
       <ol class="steps">
@@ -1311,43 +1128,27 @@
         <li>Premi <strong>Play</strong> e osserva il percorso dei pacchetti DORA attraverso il router verso il server.</li>
       </ol>
 
-      <div class="img-placeholder">
-        <div class="img-icon">🖼️</div>
-        <div class="img-label">Schermata 14</div>
-        <div class="img-desc">Simulation Mode con i pacchetti DHCP Discover e DHCP Offer visibili mentre attraversano il router dalla Rete 2 verso il DHCP Server nella Rete 1</div>
-        <div class="img-num">SCREENSHOT_14 · Inserire qui l'immagine</div>
-      </div>
+      <figure style="text-align: center; margin: 1.5rem 0;">
+          <img src="13.PNG" alt="Schermata 14" style="max-width: 100%; height: auto; border: 1px solid #d8d4cc; border-radius: 8px;">
+          <figcaption style="margin-top: 8px; font-style: italic; color: #666; font-size: 0.85rem;">
+              Schermata 14 - Simulation Mode con i pacchetti DHCP Discover e DHCP Offer visibili mentre attraversano il router
+          </figcaption>
+      </figure>
 
-      <h3>Riepilogo dei test</h3>
-      <table>
-        <thead>
-          <tr><th>Test</th><th>Comando</th><th>Risultato atteso</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>IP PC-1/PC-2</td><td><code>ipconfig</code></td><td>IP 192.168.10.16-31</td></tr>
-          <tr><td>IP PC-3/PC-4</td><td><code>ipconfig</code></td><td>IP 192.168.20.16-31</td></tr>
-          <tr><td>Ping gateway R1</td><td><code>ping 192.168.10.1</code></td><td>4 reply</td></tr>
-          <tr><td>Ping gateway R2</td><td><code>ping 192.168.20.1</code></td><td>4 reply</td></tr>
-          <tr><td>Cross-subnet</td><td><code>ping &lt;IP PC-3&gt;</code> da PC-1</td><td>4 reply</td></tr>
-          <tr><td>Raggiung. server</td><td><code>ping 192.168.10.2</code> da PC-3</td><td>4 reply</td></tr>
-        </tbody>
-      </table>
     </section>
 
-    <!-- ══ RIEPILOGO ══ -->
     <section class="section" id="riepilogo">
       <div class="section-header">
         <span class="step-badge">11</span>
-        <h2>Riepilogo e concetti chiave</h2>
+        <h2>Riepilogo finale e concetti chiave</h2>
       </div>
 
-      <p>Hai completato con successo la configurazione di una rete con DHCP centralizzato e relay inter-subnet. Ecco i punti principali da ricordare:</p>
-
+      <p>Ottimo lavoro! Hai configurato con successo una rete complessa che simula uno scenario aziendale reale. Ricorda i concetti fondamentali appresi in questo laboratorio:</p>
+      
       <ul class="checklist">
-        <li><strong>Server DHCP con IP statico</strong>: il server stesso deve avere un indirizzo fisso e conoscere il proprio gateway per poter rispondere alle richieste smistate dal router.</li>
-        <li><strong>Due pool DHCP separati</strong>: ogni subnet necessita di un pool dedicato con il proprio gateway predefinito. Il server associa la richiesta al pool corretto tramite il campo <code>giaddr</code> della richiesta.</li>
-        <li><strong>Interfacce router: <code>no shutdown</code></strong>: le interfacce Cisco sono spente di default; va sempre abilitata manualmente con <code>no shutdown</code>.</li>
-        <li><strong>DHCP Relay (<code>ip helper-address</code>)</strong>: il comando si inserisce sull'interfaccia del router affacciata sulla rete <em>senza</em> server DHCP locale. Converte il broadcast DHCP in unicast verso il server.</li>
+        <li><strong>Broadcast Isolation</strong>: I router separano i domini di broadcast. Senza un intervento, protocolli basati sul broadcast come il DHCP non possono superare il router.</li>
+        <li><strong>Relay Agent</strong>: Il comando <code>ip helper-address</code> trasforma il router in un proxy, consentendo di avere un unico server DHCP centralizzato per dozzine di subnet diverse (risparmio di risorse).</li>
+        <li><strong>Pool Multipli</strong>: Il server DHCP è abbastanza "intelligente" da capire quale blocco di IP assegnare guardando da quale subnet (<em>giaddr</em>) arriva la richiesta inoltrata dal router, non l'IP del server.</li>
         <li><strong>Verifica sistematica</strong>: usare <code>ipconfig</code>, <code>ping</code> e la Simulation Mode per confermare ogni singolo aspetto della configurazione.</li>
       </ul>
 
@@ -1371,7 +1172,7 @@
 
 <footer>
   <strong>Tutorial Packet Tracer</strong> · Reti e Sistemi – Classe 4 · Cisco 2911 · DHCP Relay<br>
-  <span style="margin-top:0.4rem;display:block">Documento didattico a uso interno — versione 1.0</span>
+  <span style="margin-top:0.4rem;display:block">Documento didattico a uso interno — Laboratorio Sistemi e Reti</span>
 </footer>
 
 </body>
